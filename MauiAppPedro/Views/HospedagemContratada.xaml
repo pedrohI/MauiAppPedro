@@ -2,11 +2,69 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppPedro.Views.HospedagemContratada"
-             Title="HospedagemContratada">
-    <VerticalStackLayout>
+             Title="HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
+
+    <VerticalStackLayout VerticalOptions="Start">
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="SOBRE O DESENVOLVEDOR: "
+            TextColor="{StaticResource Secondary}"
+            FontFamily="DotGothic16Regular"
+            FontSize="30"
+            HorizontalOptions="Center"/>
+
+        <Image Source="icone.png"
+           Aspect="AspectFit"
+           HeightRequest="150"
+           WidthRequest="150"
+           HorizontalOptions="Center" />
+
+        <Frame Margin="20">
+
+            <Label Text="Eu sou o Pedro, tenho 19 anos, estudande de Análise e Desenvolvimento de Sistemas pela Estácio e Desenvolvimento de Sistemas pela ETEC, estou sempre em constante evolução em busca de aprender as linguages de programação nas quais eu mais me identifico 📚, e gosto de jogar 🎮"
+                       FontFamily="AudiowideRegular"
+                       TextColor="{StaticResource SecondaryDarkText}"
+                       FontSize="15"
+                       LineBreakMode="WordWrap"
+                       MaxLines="9"
+                       WidthRequest="300"
+                       />
+        </Frame>
+
+        <Label Text="Linguagens:"
+               TextColor="Magenta"
+               FontSize="25"
+               FontFamily="DotGothic16Regular" />
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20" Spacing="10">
+            <Image Source="java.png" HeightRequest="40" />
+            <Image Source="php.png" HeightRequest="40" />
+            <Image Source="sql.png" HeightRequest="40" />
+            <Image Source="csharp.png" HeightRequest="40" />
+        </HorizontalStackLayout>
+
+
+            <Label Text="SOBRE O APLICATIVO:"
+                   TextColor="Magenta"
+                   FontSize="20"
+                   FontFamily="DotGothic16Regular" />
+
+
+        <Label Text="Este é um aplicativo de hotel criado na atividade da agenda 13 do curso de Desenvolvimento de Sistemas, 2º modulo, Desenvolvido em 2024"
+                   TextColor="{StaticResource SecondaryDarkText}"
+                   FontSize="15"
+                   FontFamily="AudiowideRegular"
+                   LineBreakMode="WordWrap"
+                   MaxLines="5"
+                   Margin="0,0,0,20"/>
+
+
+        <Button Text="Voltar ao Inicio"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                Margin="0,0,0,80"/>
+
     </VerticalStackLayout>
+    
 </ContentPage>

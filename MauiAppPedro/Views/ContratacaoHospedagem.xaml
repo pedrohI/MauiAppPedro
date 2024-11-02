@@ -11,7 +11,7 @@
         <Label 
             Text="Calculo da Diária"
             FontFamily="DotGothic16Regular"
-            FontSize="20"
+            FontSize="50"
             TextColor="Magenta"/>
 
         <Frame Padding="5" CornerRadius="10">
@@ -75,7 +75,8 @@
 
                     <Button Grid.Row="5" Grid.Column="1" Text="Avançar" HorizontalOptions="Center"
                             WidthRequest="100"
-                            HeightRequest="50"/>
+                            HeightRequest="50"
+                            Clicked="Button_Clicked"/>
 
 
                 
