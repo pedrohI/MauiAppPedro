@@ -13,6 +13,8 @@ namespace MauiAppPedro
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Audiowide-Regular.ttf", "AudiowideRegular");
+                    fonts.AddFont("DotGothic16-Regular.ttf", "DotGothic16Regular");
                 });
 
 #if DEBUG
